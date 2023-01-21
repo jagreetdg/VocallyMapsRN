@@ -21,6 +21,7 @@ import TabThreeScreen from '../screens/TabThreeScreen';
 import TabFourScreen from '../screens/TabFourScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
+import MapComponent from '../components/MapComponent';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -95,7 +96,7 @@ function BottomTabNavigator() {
 			/>
 			<BottomTab.Screen
 				name="TabTwo"
-				component={TabTwoScreen}
+				component={MapComponent}
         options={
         {
 					title: "",
