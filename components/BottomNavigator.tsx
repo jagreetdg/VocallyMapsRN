@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import { Icon } from "react-native-elements";
 
+const lightMode = true;
+
 class BottomNavigator extends Component {
 	render() {
 		return (
@@ -10,8 +12,8 @@ class BottomNavigator extends Component {
 				style={{
 					flex: 1,
 					flexDirection: "column",
-          backgroundColor: "white",
-          maxHeight: "1%"
+					backgroundColor: lightMode ? "white" : "black",
+					maxHeight: "1%",
 				}}
 			>
 				<View
@@ -38,7 +40,7 @@ class BottomNavigator extends Component {
 				<View
 					style={{
 						position: "absolute",
-						backgroundColor: "white",
+						backgroundColor: lightMode ? "white" : "black",
 						bottom: 0,
 						zIndex: 1,
 						width: "100%",
@@ -49,11 +51,11 @@ class BottomNavigator extends Component {
 						paddingVertical: 10,
 					}}
 				>
-					<TabBarIcon name="compass" color={"black"} />
-					<TabBarIcon name="map" color={"black"} />
-					<FontAwesome size={30} style={{ marginBottom: -3 }}/>
-					<TabBarIcon name="bell" color={"black"} />
-					<TabBarIcon name="user-o" color={"black"} />
+					<TabBarIcon name="compass" color={lightMode ? "black" : "white"} />
+					<TabBarIcon name="map" color={lightMode ? "black" : "white"} />
+					<FontAwesome size={30} style={{ marginBottom: -3 }} />
+					<TabBarIcon name="bell" color={lightMode ? "black" : "white"} />
+					<TabBarIcon name="user-o" color={lightMode ? "black" : "white"} />
 				</View>
 			</View>
 		);
