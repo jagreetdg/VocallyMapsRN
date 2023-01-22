@@ -88,7 +88,7 @@ class SearchBarJs extends React.Component {
 							defaultIndex={2}
 							resetValue={false}
 							textInputProps={{
-								placeholder: "placeholder",
+								placeholder: "Search Here",
 								underlineColorAndroid: "transparent",
 								style: {
 									padding: 12,
