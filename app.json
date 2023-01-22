@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "VocallyMapsRN",
-    "slug": "VocallyMapsRN",
+    "slug": "vocallymapsapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -29,6 +29,12 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7f02aef1-b79b-4686-a406-553a34c437f4"
+      }
+    },
+    "owner": "jagreetdg"
   }
 }
